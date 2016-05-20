@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/background1"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mehedi.dfsmania.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Input"
+        android:id="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/button_learn"
+        android:layout_alignEnd="@+id/button_learn"
+        android:layout_alignLeft="@+id/button_learn"
+        android:layout_alignStart="@+id/button_learn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Learn dfs"
+        android:id="@+id/button_learn"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClickLearn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/button_exit"
+        android:onClick="onClickExit"
+        android:layout_below="@+id/button_credit"
+        android:layout_alignRight="@+id/button_learn"
+        android:layout_alignEnd="@+id/button_learn"
+        android:layout_alignLeft="@+id/button_learn"
+        android:layout_alignStart="@+id/button_learn" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Credits"
+        android:id="@+id/button_credit"
+        android:layout_below="@+id/button_learn"
+        android:layout_alignRight="@+id/button_exit"
+        android:layout_alignEnd="@+id/button_exit"
+        android:layout_alignLeft="@+id/button_learn"
+        android:layout_alignStart="@+id/button_learn"
+        android:onClick="onClickCredit" />
+
+</RelativeLayout>
